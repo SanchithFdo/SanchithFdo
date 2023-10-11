@@ -1,0 +1,162 @@
+ html {
+   scroll-behavior: smooth;
+ }
+
+ body {
+   width: 100%;
+   height: 100%;
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+ }
+
+ body .scroll-container {
+   top: 0;
+   right: 10px;
+   height: 100%;
+   position: absolute;
+ }
+
+ body .scroll-container:before {
+   content: '';
+   display: block;
+   height: 110vh;
+   pointer-events: none;
+ }
+
+ body .scroll-container a {
+   position: sticky;
+   top: 95vh;
+   cursor: pointer;
+   font-size: 15px;
+   text-decoration: none;
+   padding: 5px;
+   background-color: rgb(255, 255, 255, 0.5);
+   border-radius: 40%;
+   color: rgb(0, 0, 0);
+ }
+
+ body .menu-bar {
+   position: relative;
+   margin-top: 70px;
+   border-radius: 25px;
+   display: inline-flex;
+   background-color: rgba(22, 97, 234, 0.2);
+   backdrop-filter: blur(10px);
+   align-items: center;
+   padding: 0 10px;
+ }
+
+ .menu-bar li {
+   list-style: none;
+   color: rgb(0, 0, 0);
+   font-family: sans-serif;
+   font-weight: bold;
+   padding: 12px 16px;
+   margin: 0 8px;
+   position: relative;
+   cursor: pointer;
+   white-space: nowrap;
+ }
+
+ .menu-bar li::before {
+   content: " ";
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   z-index: -1;
+   transition: 0.2s;
+   border-radius: 25px;
+ }
+
+ .menu-bar li:hover::before {
+   background: linear-gradient(to bottom, #544dcf, #a6a9e8);
+   box-shadow: 0px 3px 20px 0px black;
+   transform: scale(1.2);
+ }
+
+ body .headimg h1 {
+   position: absolute;
+   margin-top: 40vh;
+   margin-left: 25vw;
+   font-size: 70px;
+   color: rgb(149, 60, 233);
+ }
+
+ body .headimg img {
+   width: 80vw;
+   height: 80vh;
+   border-radius: 15px;
+   margin-top: 20px;
+   box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.5);
+   margin-bottom: 20px;
+ }
+
+ body .content .cstm-hr {
+   width: 90%;
+   margin-bottom: 10px;
+   margin-left: 5%;
+   margin-right: 5%;
+   margin-top: 20px;
+ }
+
+ body .content .vlog h1 {
+   font-size: 50px;
+   color: rgb(255, 255, 255);
+   padding-top: 55px;
+   margin-bottom: 20px;
+   text-align: center;
+   padding-left: 150px;
+ }
+
+ body .content .vlog iframe {
+   border-radius: 10px;
+   margin-left: 20px;
+   margin-right: 20px;
+   margin-bottom: 20px;
+   float: left;
+   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+   height: 350px;
+   width: 560px;
+ }
+
+ body .content .vlog p {
+   font-size: 20px;
+   color: rgb(255, 255, 255);
+   margin-top: 20px;
+   margin-bottom: 20px;
+   margin-left: 5%;
+   margin-right: 5%;
+   text-align: center;
+   margin-bottom: 30px;
+ }
+
+ body .content .vlog a {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-decoration: none;
+}
+
+body .content .vlog a:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+}
+
+body .content .vlog .btn{
+  position: relative;
+  padding: 5px 5px 5px 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  float: right;
+  margin-right: 30vw;
+  margin-bottom: 20px;
+}
+
+body .content .vlog .btn:hover{
+  background-color: rgba(0, 0, 0, 0.8);
+}

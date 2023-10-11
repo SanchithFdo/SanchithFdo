@@ -1,0 +1,100 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 8rem;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.heading h1 {
+    color: #0e117a;
+    font-size: 2rem;
+}
+
+.heading span {
+    font-size: 4rem;
+    color: #0e117a;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 64px;
+}
+
+
+.row .content h1 {
+    color: #0e117a;
+
+}
+
+.row .content p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+}
+
+
+.image img {
+    margin: 2rem;
+    border-radius: 8px;
+}
+
+.image img {
+    height: 30rem;
+    width: 30rem;
+
+}
+
+.btn {
+    background-color: rgb(255, 255, 255);
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    /* Adjust the value to control the roundness */
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #27bcda;
+    /* Change the color on hover if desired */
+}
+
+body .scroll-container {
+    top: 0;
+    right: 10px;
+    height: 100%;
+    position: absolute;
+}
+
+body .scroll-container:before {
+    content: '';
+    display: block;
+    height: 142vh;
+    pointer-events: none;
+}
+
+body .scroll-container a {
+    position: sticky;
+    top: 95vh;
+    cursor: pointer;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20%;
+    color: rgb(0, 0, 0);
+}
+
+body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}

@@ -1,0 +1,57 @@
+	.grid-container {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 5px;
+	}
+
+	.grid-item img {
+		width: 400px;
+		height: 400px;
+		margin-left: 50px;
+		border-radius: 10px;
+
+	}
+
+	.grid-item .caption h2{
+		font-family: Georgia, serif ;
+		align-content: center;
+
+	}
+	.grid-item .caption{
+		text-align: center;
+		margin-left: 15px;
+		padding-bottom: 20px;
+	}
+
+	body{
+		margin-top: 150px;
+		scroll-behavior: smooth;
+		box-sizing: border-box;
+	}
+	
+	button {
+		padding: 10px;
+		background-color: lightblue;
+		border: none;
+		border-radius: 10px;
+		margin: 5px;
+		font-family: Georgia, serif;
+		font-size: 20px;
+	
+	}
+	button:hover {
+		transition: transform 0.2s ease-in-out;
+    	transform: scale(1.1);
+    	cursor: pointer;	
+	}
+
+	button:active{
+		background-color: darkcyan;
+	}
+
+	h1 {
+		font-family: Gill Sans, serif;
+		font-size: 40px;
+		margin-left: 670px;
+		
+	}

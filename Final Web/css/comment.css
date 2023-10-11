@@ -1,0 +1,157 @@
+.query-box {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 85vw;
+  height: auto;
+  left: 7.5%;
+  background: rgba(168, 191, 246, 0.4);
+  border-width: 1px 10px 10px 1px;
+  border-style: solid;
+  border-color: #FFFFFF;
+  border-radius: 60px;
+}
+
+.display-query {
+  padding: 0;
+  margin-top: 20px;
+  margin-left: 26px;
+}
+
+
+h1 {
+  text-align: center;
+  margin-bottom: auto;
+  font-style: normal;
+  font-size: 3rem;
+  color: #0e117a;
+
+}
+
+/* Form Styles */
+
+
+.row {
+  margin-bottom: 15px;
+}
+
+.col-25 {
+  width: 25%;
+  display: inline-block;
+  margin-bottom: 0.3cm;
+  font-size: 1.3rem;
+  color: #080505;
+  white-space: nowrap;
+}
+
+
+.col-75 {
+  width: 75%;
+  display: inline-block;
+  font-size: 1.3rem;
+  color: #000000;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 300px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+  margin-left: 30px
+}
+
+
+/*sent button */
+.btn {
+  padding: 10px 60px;
+  background: #fff;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 500;
+  border-radius: 30px;
+
+}
+
+.btn:hover {
+  background-color: #27bcda;
+  /* Change the color on hover if desired */
+}
+
+
+.popup {
+  width: 400px;
+  background: #ffffff;
+  border-radius: 60px;
+  border-style: double;
+  border-width: 0.6rem;
+  border-color: rgb(0, 17, 172);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  padding: 0% 30px 30px;
+  color: #333;
+  transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup {
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.popup img {
+  width: 100px;
+  margin-top: -50px;
+  border-radius: 50%;
+  background-color: white;
+  border-radius: 60%;
+}
+
+
+
+.popup h2 {
+  font-size: 38px;
+  font-weight: 500px;
+}
+
+.popup p {
+  margin-top: 1rem;
+  font-size: 20px;
+  color: red;
+}
+
+.popup span {
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  padding: 6px 2px;
+  border: none;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  border-radius: 30px;
+}
+
+
+.popup:hover span {
+  background-color: #27bcda;
+}

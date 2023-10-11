@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@200&family=Quicksand:wght@500&family=Signika+Negative&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Changa+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+body {
+    background-color: rgba(255, 255, 255, 0.562);
+}
+
+#small_text {
+    font-size: 14px;
+}
+#medium_text {
+    font-size: 18px;
+}
+
+.buttonA {
+    border: none;
+    padding: 10px 9px;
+    margin-left: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    background: linear-gradient(to left, #ffffff, hsla(0, 0%, 73%, 0.927));
+    box-shadow: 0px 3px 5px 0px black;
+}
+.buttonB {
+    border: none;
+    padding: 8px 8px;
+    font-size: 16px;
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    background: linear-gradient(to left, #ffffff, hsla(0, 0%, 73%, 0.927));
+    box-shadow: 0px 3px 5px 0px black;
+}
+.buttonC {
+    border: none;
+    padding: 5px 5px;
+    font-size: 14px;
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    background: linear-gradient(to left, #ffffff, hsla(0, 0%, 73%, 0.927));
+    box-shadow: 0px 3px 5px 0px black;
+}
+
+.button_edit {
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgb(172, 64, 161);
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.text_buttons {
+    text-align: right;
+}
+
+#large_text {
+    font-size: 22px;
+}
+#btn_container {
+    text-align: right;
+}
+
+#blk_btn {
+    background-color: #000;
+    color: black;
+    padding: 2px;
+    width: 20px;
+    height: 15px;
+    border-radius: 3px;
+}
+
+#prple_btn {
+    background-color: rgb(29, 31, 92);
+    padding: 2px;
+    width: 20px;
+    height: 15px;
+    border-radius: 3px;
+    border-color: goldenrod;
+}
+
+#white_btn {
+    background-color: white;
+    padding: 2px;
+    width: 20px;
+    height: 15px;
+    border-radius: 3px;
+    border-color: black;
+}
+
+block {
+    background-color: #fff;
+    color: black;
+    padding: 5px;
+    width: 20px;
+    height: 5px;
+    border-radius: 4px;
+}
+.row {
+    content: "";
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    text-align: center;
+}
+
+.column {
+    width: 180px;
+    height: 100px;
+    padding: 2px;
+    margin: 10px 10px;
+    content: "";
+    border-radius: 5px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    background-color: #e2e2e2;
+}
+
+/* Style the images inside the grid */
+.column img {
+    opacity: 0.9;
+    cursor: pointer;
+    width: 180px;
+    height: 100px;
+    display: flex;
+    border-radius: 4px;
+}
+
+.column img:hover {
+    transition: 01s;
+    opacity: 1;
+}
+
+.img_desc {
+    display: none;
+    color: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+
+/* Expanding image text */
+
+/* Closable button inside the image */
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: black;
+    font-size: 35px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.container {
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    display: none;
+    border: hidden;
+}
+.container.show-border {
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+.container img {
+    border-radius: 5px;
+    transition: 0.5s;
+    float: left;
+    box-shadow: inset 4px 0px 23px 0px #000000;
+}
+
+.container2 {
+    content: "";
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+}
+
+.container3 {
+    content: "";
+    position: relative;
+    align-items: center;
+    display: flex;
+}
+#expandedImg {
+    position: relative;
+    float: left;
+    flex: 1;
+}
+
+#imgtext {
+    font-family: "Lato", sans-serif;
+    padding: 5px;
+    margin: 5px;
+    flex: 1;
+}
+h1 {
+    color: rgb(154, 161, 13);
+}
+
+

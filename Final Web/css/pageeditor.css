@@ -1,0 +1,22 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin: 0%;
+    font-weight: bold;
+
+}
+
+h1 {
+    background-color: rgb(249, 90, 90);
+    padding: 4px;
+
+}
+
+p {
+    font-style: italic;
+
+}
+
+.details {
+    background-color: rgb(249, 90, 90);
+}

@@ -1,0 +1,62 @@
+
+body {
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 100% 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.button_edit {
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: red;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+rect {
+    fill: rgba(61, 60, 70, 0.799);
+    stroke-width: 1.6;
+    stroke: rgb(22, 21, 21);
+}
+
+svg {
+    display: block;
+    margin: 0 auto;
+}
+
+line {
+    stroke: rgb(3, 5, 15);
+    stroke-width: 2;
+}
+
+#site g text {
+    fill: #d6d6d6;
+    font-size: 16px;
+    font-family: sans-serif;
+    text-anchor: middle;
+}
+
+#site g:hover rect,
+#site g:focus rect {
+    fill: rgba(118, 118, 123, 0.727);
+    stroke: red;
+    stroke-width: 3;
+    transition: 0.8s;
+}
+
+#site g:hover g text,
+#site g:hover text {
+    text-shadow: 0.5px 0.5px 0 #d8d8d8, 0.5px 0.5px 0 #e6e6e6, 0.5px 0.5px 0 #e6e6e6, 0.5px 0.5px 0 #3d3d3d;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+/* .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+    } */

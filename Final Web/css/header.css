@@ -1,0 +1,100 @@
+body {
+  min-height: 100vh; overflow-x: hidden;
+}
+
+.header .logo img {
+  height: 35px; /* Adjust the height as desired */
+  width: 35px; /* Maintain aspect ratio */
+  padding: 5px;
+  background-color: rgb(255, 255, 255);
+  margin-top: 0.3cm;
+  border-radius: 50%;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: bolder;
+  text-decoration: none; /* Remove underlines */
+  padding-right: 1rem;
+}
+
+.header {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #2c3b62;
+  display: flex;
+  align-items: center;
+  padding: 0.2rem 5%;
+  white-space: nowrap;
+  border-radius: 0 0 1rem 1rem; /* Add border radius to bottom corners */
+}
+
+
+.header nav ul {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  margin-left: 60%;
+  padding-left: 0;
+}
+
+.header nav ul li {
+  margin-left:  11px;
+}
+
+.header nav ul li:first-child {
+  margin-left: auto;
+}
+
+.header nav ul li a {
+  color: #f9f7f7;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.header nav ul li a:hover {
+  background-color: rgb(187, 166, 166);
+}
+
+
+/* Dropdown menu styles */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  background-color: #2187d5c9;
+  min-width: 1px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px; /* Add border-radius property to curve the box */
+}
+
+
+.dropdown-content a {
+  display: block;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.arrow-h{
+color: rgba(255, 255, 255, 0.4);
+}
